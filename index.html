@@ -1,256 +1,345 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
 
-  <title>Pietro Mazzaglia</title>
-  
-  <meta name="author" content="Pietro Mazzaglia">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2R22408T2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tab info -->
+    <title>Mazzaglia AI</title>
+    <link rel="icon" type="image/x-icon" href="./resources/world-icon.png">
+    <!-- Bulma CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Font Awesome icons  -->
+    <script src="https://kit.fontawesome.com/b165665cab.js" crossorigin="anonymous"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L2R22408T2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-L2R22408T2');
+    </script>
+    <!-- Copy to clipboard -->
+    <script>
+        function revealEmail(evt) {
+            // Get the text field
+            var firstName = "pietro"
+            var lastName = "mazzaglia"
+            var copyText = firstName + '.' + lastName + "@ugent.be";
 
-    gtag('config', 'G-L2R22408T2');
-  </script>
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText);
+            evt.target.textContent = copyText;
+        }
+    </script>
+    <style>
+        .is-rounded-corners {
+            border-radius: 15%;
+        }
+    </style>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Pietro Mazzaglia</name>
-              </p>
-              <p>I am a PhD researcher in Artificial Intelligence at the University of Ghent. The objective of my research is to build intelligent agents that discover and learn how to behave in the environment by interacting with it.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:pietro.mazzaglia@ugent.be">Email</a> &nbsp/&nbsp
-                <!-- <a href="data/TODO">CV</a> &nbsp/&nbsp -->
-                <!-- <a href="data/TODO">Bio</a> &nbsp/&nbsp -->
-                <a href="https://scholar.google.com/citations?user=c-PYVTgAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://twitter.com/pietromazzaglia">Twitter</a> 
-                <!-- &nbsp/&nbsp -->
-                <!-- <a href="NOT USEFUL">Github</a> -->
-              </p>
-            </td>
-            <td style="padding:2.5%;width:25%;max-width:25%">
-              <a href="images/PietroMazzaglia.png"><img style="width:100%;max-width:100%;border-radius: 50%;" alt="profile photo" src="images/PietroMazzaglia.png" class="hoverZoomLink"></a>
-              <p style="text-align: center;">
-                <a href="https://twitter.com/pietromazzaglia?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @pietromazzaglia</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+    <div class="container p-3 is-primary pl-6 pr-6">
+        <!-- Title section -->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <div class="navbar-item">
+                    <span><img src="./resources/world-icon.png"> &nbsp;</span>
+                    <span class="title is-4"><strong>Pietro Mazzaglia</strong></span>
+                </div>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#about">
+                        About
+                    </a>
+                    <a class="navbar-item" href="#about">
+                        Background
+                    </a>
+                    <a class="navbar-item" href="#research">
+                        Research
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <div class="button is-dark" onclick="revealEmail(event)">
+                                <strong>Show e-mail</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>PhD Research</heading>
-              <p> 
-                The main focus of the research is on unsupervised objectives for control. Some topics I am interested in are: reinforcement learning, intrinsic motivation, skill discovery, world models, representation learning, and active inference.
-              </p> 
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <br>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/unsup_mbpt.png" alt="urlb_performance" width="160" height="160" style="border-style: none">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://openreview.net/forum?id=8ZuNl-FXGbB">
-                <papertitle>Unsupervised Model-based Pre-training for Data-efficient Reinforcement Learning from Pixels</papertitle>
-              </a>
-              <br>
-              Sai Rajeswar*, <strong>Pietro Mazzaglia*</strong>, Tim Verbelen, Alexandre Piché, Bart Dhoedt, Aaron Courville, Alexandre Lacoste
-              <br>
-              <em>ICML Workshop: Decision Awareness in Reinforcement Learning</em>, 2022
-              <br>
-              <a href="data/Rajeswar2022UMBPT.bib">bibtex</a>
-            </td>
-          </tr>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/entropy_crop.png" alt="entropy" width="160" height="160" style="border-style: none">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://www.mdpi.com/1099-4300/24/2/301">
-                <papertitle>The Free Energy Principle for Perception and Action: A Deep Learning Perspective</papertitle>
-              </a>
-              <br>
-              <strong>Pietro Mazzaglia</strong>, Tim Verbelen, Ozan Çatal, Bart Dhoedt
-              <br>
-              <em>Entropy</em>, 2022
-              <br>
-              <a href="data/Mazzaglia2022FEP.bib">bibtex</a>
-            </td>
-          </tr>
+        <!-- Description  -->
+        <div class="block">
+            <div class="columns is-mobile is-multiline">
+                <div class="column is-one-fifth-desktop is-half-mobile is-one-third-tablet">
+                    <figure class="image">
+                        <img class="is-rounded" src="./resources/avatars/pietro_mazzaglia.png" alt="profile picture">
+                    </figure>
+                </div>
+                <div class="column is-full- is-four-fiths-desktopmobile is-two-thirds-tablet  is-size-4">
+                    <h2 class="title is-4">About</h2>
+                    <div class="content">
+                        Hi, I am Pietro and I am a PhD researcher in Artificial Intelligence at the University of Ghent, Belgium, supervised by <a href="https://scholar.google.be/citations?user=G86XVPEAAAAJ&hl=en">Tim Verbelen</a> and <a href="https://scholar.google.be/citations?user=sFzXLXsAAAAJ&hl=en">Bart Dhoedt</a>.  <br />
+                        The objective of my research is to build intelligent agents that discover and learn how to
+                        behave in the environment by interacting with it.
+                    </div>
+                    <br />
+                </div>
+                <div class="buttons is-centered">
+                    <a class="button is-normal is-rounded"
+                        href="https://scholar.google.com/citations?user=c-PYVTgAAAAJ&hl=en">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        &nbsp;
+                        <span>Google Scholar</span>
+                    </a>
+                    <a class="button is-normal is-rounded" href="https://twitter.com/pietromazzaglia">
+                        <i class="fa-brands fa-twitter"></i>
+                        &nbsp;
+                        <span>Twitter</span>
+                    </a>
+                    <a class="button is-normal is-rounded" href="https://sigmoid.social/@pietromazzaglia">
+                        <i class="fa-brands fa-mastodon"></i>
+                        &nbsp;
+                        <span>Mastodon</span>
+                    </a>
+                    <a class="button is-normal is-rounded" href="https://www.linkedin.com/in/pietromazzaglia/">
+                        <i class="fa-brands fa-linkedin"></i>
+                        &nbsp;
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
 
-          <tr id="LBS">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/lbs_summary_crop.jpg" alt="lbs_summary" width="160" height="160" style="border-style: none">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2104.07495">
-                <papertitle>Curiosity-Driven Exploration via Latent Bayesian Surprise</papertitle>
-              </a>
-              <br>
-              <strong>Pietro Mazzaglia</strong>, Ozan Catal, Tim Verbelen, Bart Dhoedt
-              <br>
-              <em>AAAI</em>, 2022 (oral)
-              <br>
-              <a href="data/Mazzaglia2022LBS.bib">bibtex</a>
-              <a href="https://thesmartrobot.github.io/2022/02/23/lbs-exploration.html">blogpost</a>
-              <a href="https://lbsexploration.github.io/">project</a>
-            </td>
-          </tr>
+        <!-- Background -->
+        <div class="block" id="background">
+            <h2 class="title is-4">Personal background</h2>
+            <div class="content is-size-5">
+                <ul>
+                    <li>I grew up in Catania, a sunny city next to a <a href="https://en.wikipedia.org/wiki/Mount_Etna">volcano <i class="fa-solid fa-volcano"></i></a> in the east coast of Sicily, Italy.</li>
+                    <li>During my bachelor, I lived and studied at the superior graduate institute <a href="https://en.wikipedia.org/wiki/Scuola_superiore_di_Catania">Scuola Superiore di Catania</a>, where I was a scholar while attending the BSc Computer Engineering course at the University of Catania.</li>                    
+                    <li>For my master degree, I moved to Manchester, UK, where I studied Artificial Intelligence at The University of Manchester.</li>
+                </ul> 
+            </div>
+        </div>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/contrastive_plan.png" alt="contrastive_plan" width="160" height="160" style="border-style: none">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2110.10083">
-                <papertitle>Contrastive Active Inference</papertitle>
-              </a>
-              <br>
-              <strong>Pietro Mazzaglia</strong>, Tim Verbelen, Bart Dhoedt
-              <br>
-              <em>NeurIPS</em>, 2021
-              <br>
-              <a href="data/Mazzaglia2021CAIF.bib">bibtex</a>
-              <a href="https://thesmartrobot.github.io/2021/11/18/contrastive-actinf.html">blogpost</a>
-            </td>
-          </tr>
+        <!-- Background -->
+        <div class="block" id="interest">
+            <h2 class="title is-4">Research interests</h2>
+            <div class="content is-size-5">
+                My main research interests are:
+                <ul>
+                    <li>Deep reinforcement learning</li>
+                    <li>Unsupervised RL (exploration, skills)</li>
+                    <li>World models</li>
+                    <li>Robotics</li>
+                    <li>Active inference</li>
+                </ul> 
+                If you are interested in working together, feel free to contact me at my email: <a onclick="revealEmail(event)">(click to show)</a>
+            </div>
+        </div>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/emaze.png" alt="safs_small" width="160" height="160" style="border-style: none">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2104.10995">
-                <papertitle>A learning gap between neuroscience and reinforcement learning</papertitle>
-              </a>
-              <br>
-              Samuel T. Wauthier, <strong>Pietro Mazzaglia</strong>, Ozan Çatal, Cedric De Boom, Tim Verbelen, Bart Dhoedt
-              <br>
-              <em>ICLR Workshop: How Can Findings About The Brain Improve AI Systems?</em>, 2021
-              <br>
-              <a href="data/Wauthier2021LearningGap.bib">bibtex</a>
-              <a href="https://github.com/thesmartrobot/ambigym">code</a>
-            </td>
-          </tr>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/atari_animated.gif" alt="safs_small" width="160" height="160" style="border-style: none">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://openreview.net/forum?id=PvTXy6DKvlh">
-                <papertitle>Self-Supervised Exploration via Latent Bayesian Surprise </papertitle>
-              </a>
-              <br>
-              <strong>Pietro Mazzaglia</strong>, Ozan Catal, Tim Verbelen, Bart Dhoedt
-              <br>
-              <em>ICLR Workshop: Self-Supervision for Reinforcement Learning</em>, 2021
-              <br>
-              <a href="data/Mazzaglia2021SSLExploration.bib">bibtex</a>
-              <p>This paper is subsumed by <a href="#LBS">Curiosity-Driven Exploration via Latent Bayesian Surprise</a>.</p>
-            </td>
-          </tr>
+        <!-- Research -->
+        <div class="block" id="research">
+            <h2 class="title is-4">Research spotlight</h2>
+            <div class="content is-size-5">
+                Here's a selection of my research contributions. <br/> 
+                For an exhaustive list, please check my <a href="https://scholar.google.com/citations?user=c-PYVTgAAAAJ&hl=en">Google Scholar profile</a>.
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="columns is-mobile is-multiline">
+                        <div class="column is-one-fifth-desktop is-full-mobile">
+                            <figure class="image">
+                                <img class="is-rounded-corners" src="./resources/images/choreo.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-5 is-spaced">
+                                Choreographer: Learning and Adapting Skills in Imagination
+                            </p>
+                            <p class="subtitle is-5">
+                                Pietro Mazzaglia, Tim Verbelen, Bart Dhoedt, Alexandre Lacoste, Sai Rajeswar
+                            </p>
+                            <p class="">
+                                Offline RL workshop @ ICML 2022 (<strong>oral</strong>) <br/>
+                                Deep RL workshop @ ICML 2022
+                            </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer is-multiline columns">
+                        <a class="card-footer-item button" href="https://openreview.net/pdf?id=BxYsP-7ggf">
+                            <span class="icon is-small"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i></span>
+                            <span> Read article </span >
+                        </a>
+                        <a class="card-footer-item button" href="https://skillchoreographer.github.io/">
+                            <span class="icon is-small"><i class="fa-solid fa-globe"></i></span>
+                            <span> Project site </span >
+                        </a>
+                    </footer>
+                </div>
+            </div>
 
-        </tbody></table>
+            <br/>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-          <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>BSc research</heading>
-            <p> 
-              Before starting my PhD, I contributed to research in the Cloud Computing Lab group at the University of Catania.
-            </p> 
-          </td>
-        </tr>
-      </tbody></table>
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <div class="card">
+                <div class="card-content">
+                    <div class="columns is-mobile is-multiline">
+                        <div class="column is-one-fifth-desktop is-full-mobile">
+                            <figure class="image">
+                                <img class="is-rounded-corners" src="./resources/images/unsup_mbpt.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-5 is-spaced">
+                                Unsupervised Model-based Pre-training for Data-efficient Reinforcement Learning from Pixels
+                            </p>
+                            <p class="subtitle is-5">
+                                Sai Rajeswar, Pietro Mazzaglia, Tim Verbelen, Alexandre Piché, Bart Dhoedt, Aaron Courville, Alexandre Lacoste
+                            </p>
+                            <p class="">
+                                DARL workshop @ ICML 2022
+                            </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer is-multiline columns">
+                        <a class="card-footer-item button" href="https://openreview.net/forum?id=8ZuNl-FXGbB">
+                            <span class="icon is-small"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i></span>
+                            <span> Read article </span >
+                        </a>
+                    </footer>
+                </div>
+            </div>
 
-        <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src="images/torch_provisioning.jpg" alt="wp_container_deploy" width="160" height="160" style="border-style: none">
-          </td>
-          <td width="75%" valign="middle">
-            <a href="https://link.springer.com/article/10.1007/s10723-021-09549-z">
-              <papertitle>TORCH: a TOSCA-Based Orchestrator of Multi-Cloud Containerised Applications</papertitle>
-            </a>
-            <br>
-            Orazio Tomarchio, Domenico Calcaterra, Giuseppe Di Modica, <strong>Pietro Mazzaglia</strong>
-            <br>
-            <em>Journal of Grid Computing</em>, 2021
-            <br>
-            <a href="data/Tomarchio2021TORCH.bib">bibtex</a>
-          </td>
-        </tr>
+            <br/>
 
-        <tr id="CAOCA">
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src="images/wp_container_deploy.jpg" alt="wp_container_deploy" width="160" height="160" style="border-style: none">
-          </td>
-          <td width="75%" valign="middle">
-            <a href="https://link.springer.com/chapter/10.1007/978-3-030-72369-9_13">
-              <papertitle>Cluster-Agnostic Orchestration of Containerised Applications</papertitle>
-            </a>
-            <br>
-            Domenico Calcaterra, Giuseppe Di Modica, <strong>Pietro Mazzaglia</strong>, Orazio Tomarchio
-            <br>
-            <em>International Conference on Cloud Computing and Services Science</em>, 2021
-            <br>
-            <a href="data/Calcaterra2021ClusterAgnostic.bib">bibtex</a>
-          </td>
-        </tr>
+            <div class="card">
+                <div class="card-content">
+                    <div class="columns is-mobile is-multiline">
+                        <div class="column is-one-fifth-desktop is-full-mobile">
+                            <figure class="image">
+                                <img class="is-rounded-corners" src="./resources/images/lbs_summary_crop.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-5 is-spaced">
+                                Curiosity-Driven Exploration via Latent Bayesian Surprise
+                            </p>
+                            <p class="subtitle is-5">
+                                Pietro Mazzaglia, Ozan Çatal, Tim Verbelen, Bart Dhoedt
+                            </p>
+                            <p class="">
+                                AAAI 2022 (<strong>oral</strong>) <br/>
+                                SSL-RL workshop @ ICLR 2021
+                            </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer is-multiline columns">
+                        <a class="card-footer-item button" href="https://arxiv.org/abs/2104.07495">
+                            <span class="icon is-small"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i></span>
+                            <span> Read article </span >
+                        </a>
+                        <a class="card-footer-item button" href="https://lbsexploration.github.io/">
+                            <span class="icon is-small"><i class="fa-solid fa-globe"></i></span>
+                            <span> Project site </span >
+                        </a>
+                        <a class="card-footer-item button" href="https://thesmartrobot.github.io/2022/02/23/lbs-exploration.html">
+                            <span class="icon is-small"><i class="fa-solid fa-blog"></i></span>
+                            <span> Blog </span >
+                        </a>
+                    </footer>
+                </div>
+            </div>
 
-        <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
-            <img src="images/container_architecture.jpg" alt="wp_container_deploy" width="160" height="160" style="border-style: none">
-          </td>
-          <td width="75%" valign="middle">
-            <a href="https://www.scitepress.org/Papers/2020/94107/94107.pdf">
-              <papertitle>Enabling Container Cluster Interoperability using a TOSCA Orchestration Framework</papertitle>
-            </a>
-            <br>
-            Domenico Calcaterra, Giuseppe Di Modica, <strong>Pietro Mazzaglia</strong>, Orazio Tomarchio
-            <br>
-            <em>Conference on Cloud Computing and Services Science - CLOSER</em>, 2020
-            <br>
-            <a href="data/Calcaterra2020EnablignContainer.bib">bibtex</a>
-            <p>This paper is subsumed by <a href="#CAOCA">Cluster-Agnostic Orchestration of Containerised Applications            </a>.</p>
-          </td>
-        </tr>
+            <br/>
 
-      </tbody></table>
+            <div class="card">
+                <div class="card-content">
+                    <div class="columns is-mobile is-multiline">
+                        <div class="column is-one-fifth-desktop is-full-mobile">
+                            <figure class="image">
+                                <img class="is-rounded-corners" src="./resources/images/contrastive_plan.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-5 is-spaced">
+                                Contrastive Active Inference
+                            </p>
+                            <p class="subtitle is-5">
+                                Pietro Mazzaglia, Tim Verbelen, Bart Dhoedt
+                            </p>
+                            <p class="">
+                                NeurIPS 2021
+                            </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer is-multiline columns">
+                        <a class="card-footer-item button" href="https://arxiv.org/abs/2110.10083">
+                            <span class="icon is-small"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i></span>
+                            <span> Read article </span >
+                        </a>
+                        <a class="card-footer-item button" href="https://thesmartrobot.github.io/2021/11/18/contrastive-actinf.html">
+                            <span class="icon is-small"><i class="fa-solid fa-blog"></i></span>
+                            <span> Blog </span >
+                        </a>
+                    </footer>
+                </div>
+            </div>
 
-				
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Website inspired by <a href="https://github.com/jonbarron/jonbarron_website">this</a> template.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+            <br/>
+
+            <div class="card">
+                <div class="card-content">
+                    <div class="columns is-mobile is-multiline">
+                        <div class="column is-one-fifth-desktop is-full-mobile">
+                            <figure class="image">
+                                <img class="is-rounded-corners" src="./resources/images/entropy_crop.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-5 is-spaced">
+                                The Free Energy Principle for Perception and Action: A Deep Learning Perspective
+                            </p>
+                            <p class="subtitle is-5">
+                                Pietro Mazzaglia, Tim Verbelen, Ozan Çatal, Bart Dhoedt
+                            </p>
+                            <p class="">
+                                Entropy 2022
+                            </p>
+                        </div>
+                    </div>
+                    <footer class="card-footer is-multiline columns">
+                        <a class="card-footer-item button" href="https://arxiv.org/abs/2207.06415">
+                            <span class="icon is-small"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i></span>
+                            <span> Read article </span >
+                        </a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer pt-5 pb-5">
+            <div class="content has-text-centered">
+                <i class="fa-regular fa-copyright"></i>
+                <br/>
+                <p>
+                    You are free to borrow the source code of this website,
+                    but please link back to this page in your footer <br />
+                    (and remember to remove the analytics code included in the header of the website).
+                </p>
+            </div>
+        </footer>
+
 </body>
 
 </html>
