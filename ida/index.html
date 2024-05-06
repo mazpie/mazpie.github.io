@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information-driven Affordance Discovery for Efficient Robotic Manipulation</title>
+    <!-- Bulma CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Font Awesome icons  -->
+    <script src="https://kit.fontawesome.com/b165665cab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container p-3 is-primary">
+        <!-- Title section -->
+        <br>
+        <div class="block is-center has-text-centered">
+            <h1 class="title is-1 is-spaced">Information-driven Affordance Discovery <br> for Efficient Robotic Manipulation</h1>
+
+            <div class="columns is-mobile is-centered is-multiline">
+                <div class="column is-one-third-mobile is-narrow-desktop">
+                    <figure class="image container is-96x96">
+                        <img class="is-rounded" src="./resources/avatars/pietro_mazzaglia.jpg">
+                    </figure>
+                    <p class="subtitle is-5"> Pietro Mazzaglia</p>
+                </div>
+                <div class="column is-one-third-mobile is-narrow-desktop">
+                    <figure class="image container is-96x96">
+                        <img class="is-rounded" src="./resources/avatars/taco_cohen.jpg">
+                    </figure>
+                    <p class="subtitle is-5"> Taco Cohen</p>
+                </div>
+                <div class="column is-one-third-mobile is-narrow-desktop">
+                    <figure class="image container is-96x96">
+                        <img class="is-rounded" src="./resources/avatars/daniel_dijkman.jpg">
+                    </figure>
+                    <p class="subtitle is-5"> Daniel Dijkman</p>
+                </div>
+            </div>
+        </div>
+        <br />
+        
+        <div class="has-text-centered">
+            <img width="75%" src="./resources/information_maps.svg">
+        </div>
+
+        <!-- Abstract -->
+        <div class="block box">
+            <h2 class="title is-3"> Abstract </h2>
+            <p class="is-size-5">
+                Robotic affordances, providing information about what actions can be taken in a given situation, can aid robotic manipulation. However, learning about affordances requires expensive large annotated datasets of interactions or demonstrations. In this work, we argue that well-directed interactions with the environment can mitigate this problem and propose an information-based measure to augment the agent's objective and accelerate the affordance discovery process. We provide a theoretical justification of our approach and we empirically validate the approach both in simulation and real-world tasks. Our method, which we dub IDA, enables the efficient discovery of visual affordances for several action primitives, such as grasping, stacking objects, or opening drawers, strongly improving data efficiency in simulation, and it allows us to learn grasping affordances in a small number of interactions, on a real-world setup with a UFACTORY XArm 6 robot arm.            </p>
+            </div>
+
+        <br />
+
+        <!-- Approach -->
+        <div class="block box is-size-4">
+            <h2 class="title is-3">Efficient visual affordance learning in simulation</h2>
+            <div class="is-text is-1">
+                Benchmarking on a series of Maniskill2 simulated tasks, Information-Driven Affordance discovery (IDA) leads to superior final performance, in terms of mean success rate (+8% overall success).
+            </div>
+            <br>
+            <div class="content has-text-centered">
+                <img width="29%" src="./resources/main_rliable.png" />
+                <img width="70%" src="./resources/table_results.png" />
+                <img width="19%" src="./resources/PickCube_clean.png" />
+                <img width="19%" src="./resources/PickSingleYCB_clean.png" />
+                <img width="19%" src="./resources/PickSingleEGAD_clean.png" />
+                <img width="19%" src="./resources/StackCube_clean.png" />
+                <img width="19%" src="./resources/OpenCabinetDrawer_clean.png" />
+            </div>
+        </div>
+        <!-- Approach -->
+        <div class="block box is-size-4">
+            <h2 class="title is-3">Online visual affordance learning in Real-world</h2>
+            <div class="is-text is-1">
+                When tested in real world, IDA accelerates visual grasp affordance learning in our robotic setup, obtaining a 90% success rate from only 250 self-supervised interactions.
+            </div>
+            <br>
+            <div class="content has-text-centered">
+                <video width="90%" height="90%" controls="controls">
+                    <source src="./resources/affordance_learning.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+        <div class="block box is-size-5">
+            <h2 class="title is-3"> Citation </h2>
+            <div class="content notification">
+                @inproceedings{ <br />
+                &nbsp; &nbsp; &nbsp; &nbsp; Mazzaglia2024IDA, <br />
+                &nbsp; &nbsp; &nbsp; &nbsp; title={Information-driven Affordance Discovery for Efficient Robotic Manipulation}, <br />
+                &nbsp; &nbsp; &nbsp; &nbsp; author={Pietro Mazzaglia and Taco Cohen and Daniel Dijkman}, <br />
+                &nbsp; &nbsp; &nbsp; &nbsp; booktitle={2024 IEEE International Conference on Robotics and Automation (ICRA)}, <br />
+                &nbsp; &nbsp; &nbsp; &nbsp; year={2024}, <br />
+                } <br />
+            </div>
+        </div>
+
+
+        <footer class="footer pt-5 pb-5">
+            <div class="content has-text-centered">
+                <p>
+                    Website created by
+                    <a href="https://mazpie.github.io"><strong>Pietro Mazzaglia</strong></a>, PhD student at Ghent University
+                    <br />
+                    <br />
+                    You are free to borrow the source code,
+                    but please link back to this page in your footer <br />
+                    (and remember to remove the analytics code included in the header of the website).
+                </p>
+            </div>
+        </footer>
+
+</body>
+
+</html>
