@@ -41,9 +41,12 @@
       </nav>
       <section class="section is-center has-text-centered has-background-dark">
         <br>
-        <h1 class="has-text-light title is-1 is-spaced">Multimodal foundation world models <br> for generalist embodied agents</h1>
-        <div class="has-text-light subtitle is-4 is-centered">
+        <h1 class="has-text-light title is-2 is-spaced">GenRL: Multimodal-foundation world models <br> for generalization in embodied agents</h1>
+        <div class="has-text-light subtitle is-5 is-centered">
             Pietro Mazzaglia, Tim Verbelen, Bart Dhoedt, Aaron Courville, Sai Rajeswar
+        </div>
+        <div class="has-text-light subtitle is-5 is-centered">
+            NeurIPS 2024
         </div>
         <div class="has-text-centered">
             <img style="width:50%" src="./assets/imgs/GenRL_cover.gif">
@@ -78,135 +81,166 @@
         <section class="section" id="tasks">
             <h3 class="subtitle is-4 is-spaced"><i class="fa-solid fa-gamepad" aria-hidden="true"></i> &nbsp; Task behaviors</h3>
             <h4 class="subtitle is-5 is-spaced has-text-grey"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> &nbsp; Behavior retrieval</h4>
-            <p>
-                The agent is tasked to solve tasks that are in the agent's training set. Tasks are inferred by the agent from text prompts, without any access to the real reward functions. <br> 
-                See the article for the list of tasks and results.
-            </p>
-            <br>
-            <div class="has-text-centered">
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/walker_run.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/kitchen_burner.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/quadruped_run.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_walk.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/cheetah_run.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/walker_stand.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/kitchen_light.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/quadruped_stand.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_run.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/kitchen_microwave.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/walker_walk.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/quadruped_walk.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/kitchen_slide.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_stand.mp4" type="video/mp4">
-            </video>
+            The agent is tasked to solve tasks that are in the agent's training set. Tasks are inferred by the agent from text prompts, without any access to the real reward functions. <br>
+            See the article for the list of tasks, results and text prompts. <br> <br>
+            <div class="has-text-centered columns is-variable">
+            <div class="column">
+                <div>walker run</div>
+                <image src="assets/videos/walker_run.gif"></image>
             </div>
-            <br>
+            <div class="column">
+                <div>kitchen burner</div>
+                <image src="assets/videos/kitchen_burner.gif"></image>
+            </div>
+            <div class="column">
+                <div>quadruped run</div>
+                <image src="assets/videos/quadruped_run.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman walk</div>
+                <image src="assets/videos/stickman_walk.gif"></image>
+            </div>
+            <div class="column">
+                <div>cheetah run</div>
+                <image src="assets/videos/cheetah_run.gif"></image>
+            </div>
+            <div class="column">
+                <div>walker stand</div>
+                <image src="assets/videos/walker_stand.gif"></image>
+            </div>
+            <div class="column">
+                <div>kitchen light</div>
+                <image src="assets/videos/kitchen_light.gif"></image>
+            </div>
+            </div>
+            <div class="has-text-centered columns is-variable">
+            <div class="column">
+                <div>quadruped stand</div>
+                <image src="assets/videos/quadruped_stand.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman run</div>
+                <image src="assets/videos/stickman_run.gif"></image>
+            </div>
+            <div class="column">
+                <div>kitchen microwave</div>
+                <image src="assets/videos/kitchen_microwave.gif"></image>
+            </div>
+            <div class="column">
+                <div>walker walk</div>
+                <image src="assets/videos/walker_walk.gif"></image>
+            </div>
+            <div class="column">
+                <div>quadruped walk</div>
+                <image src="assets/videos/quadruped_walk.gif"></image>
+            </div>
+            <div class="column">
+                <div>kitchen slide</div>
+                <image src="assets/videos/kitchen_slide.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman stand</div>
+                <image src="assets/videos/stickman_stand.gif"></image>
+            </div>
+            </div>
             <h4 class="subtitle is-5 is-spaced has-text-grey"><i class="fa-solid fa-star" aria-hidden="true"></i> &nbsp; Multitask generalization</h4>
-            <p>
-                The agent is tasked to solve new tasks that not contained in the training set. Tasks are inferred by the agent from text prompts, without any access to the real reward functions. <br> 
-                See the article for the list of tasks and results.
-            </p>
-            <br>
-            <div class="has-text-centered">
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/walker_flipping.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_headstand.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/quadruped_two_legs.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_sit_knees.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/walker_lunge_pose.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_boxing.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/walker_sit_knees.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_high_kick.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/cheetah_standing.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_flipping.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/quadruped_jump.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_legs_up.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/walker_high_kick.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_lunge_pose.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/walker_lying_down.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_one_foot.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/quadruped_lie_down.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_lying_down.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/walker_one_foot.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/stickman_hands_up.mp4" type="video/mp4">
-            </video>
-            <video playsinline="" autoplay="" loop="" preload="" muted="" width="13%">
-                <source src="assets/videos/cheetah_lying_down.mp4" type="video/mp4">
-            </video>
+            The agent is tasked to solve new tasks that not contained in the training set. Tasks are inferred by the agent from text prompts, without any access to the real reward functions. <br>
+            See the article for the list of tasks, results and text prompts. <br> <br>
+            <div class="has-text-centered columns is-variable">
+            <div class="column">
+                <div>walker flipping</div>
+                <image src="assets/videos/walker_flipping.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman headstand</div>
+                <image src="assets/videos/stickman_headstand.gif"></image>
+            </div>
+            <div class="column">
+                <div>quadruped two legs</div>
+                <image src="assets/videos/quadruped_two_legs.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman sit knees</div>
+                <image src="assets/videos/stickman_sit_knees.gif"></image>
+            </div>
+            <div class="column">
+                <div>walker lunge pose</div>
+                <image src="assets/videos/walker_lunge_pose.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman boxing</div>
+                <image src="assets/videos/stickman_boxing.gif"></image>
+            </div>
+            <div class="column">
+                <div>walker sit knees</div>
+                <image src="assets/videos/walker_sit_knees.gif"></image>
+            </div>
+            </div>
+            <div class="has-text-centered columns is-variable">
+            <div class="column">
+                <div>stickman high kick</div>
+                <image src="assets/videos/stickman_high_kick.gif"></image>
+            </div>
+            <div class="column">
+                <div>cheetah standing</div>
+                <image src="assets/videos/cheetah_standing.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman flipping</div>
+                <image src="assets/videos/stickman_flipping.gif"></image>
+            </div>
+            <div class="column">
+                <div>quadruped jump</div>
+                <image src="assets/videos/quadruped_jump.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman legs up</div>
+                <image src="assets/videos/stickman_legs_up.gif"></image>
+            </div>
+            <div class="column">
+                <div>walker high kick</div>
+                <image src="assets/videos/walker_high_kick.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman lunge pose</div>
+                <image src="assets/videos/stickman_lunge_pose.gif"></image>
+            </div>
+            </div>
+            <div class="has-text-centered columns is-variable">
+            <div class="column">
+                <div>walker lying down</div>
+                <image src="assets/videos/walker_lying_down.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman one foot</div>
+                <image src="assets/videos/stickman_one_foot.gif"></image>
+            </div>
+            <div class="column">
+                <div>quadruped lie down</div>
+                <image src="assets/videos/quadruped_lie_down.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman lying down</div>
+                <image src="assets/videos/stickman_lying_down.gif"></image>
+            </div>
+            <div class="column">
+                <div>walker one foot</div>
+                <image src="assets/videos/walker_one_foot.gif"></image>
+            </div>
+            <div class="column">
+                <div>stickman hands up</div>
+                <image src="assets/videos/stickman_hands_up.gif"></image>
+            </div>
+            <div class="column">
+                <div>cheetah lying down</div>
+                <image src="assets/videos/cheetah_lying_down.gif"></image>
+            </div>
             </div>
         </section>
         <section class="section" id="lang-prompts">
             <h3 class="subtitle is-4 is-spaced"><i class="fa-solid fa-language" aria-hidden="true"></i> &nbsp;  Language prompts decoded</h3>
-                <p>
-                    Multimodal foundation world models allow grounding language prompts into the embodied domain.<br> 
-                    The world model allows to visualize how the language prompt is interpreted by the model, by decoding the latent states that correspond to the prompt.
-                </p>
-                <br>
+            Multimodal foundation world models allow grounding language prompts into the embodied domain. <br>
+            The world model allows to visualize how the language prompt is interpreted by the model, by decoding the latent states that correspond to the prompt. <br> <br>
                 <div class="columns is-mobile is-centered is-multiline is-variable">
                     <div class="column has-text-centered is-one-quarter-mobile">
                         <div style="height:3em">boxing</div>
@@ -271,52 +305,68 @@
 
         <section class="section" id="video-prompts">
             <h3 class="subtitle is-4 is-spaced"><i class="fa-solid fa-video" aria-hidden="true"></i> &nbsp; Video prompts decoded</h3>
-            <p>
-                Multimodal foundation world models allow grounding visual prompts into the embodied domain.<br> 
-                The world model allows to visualize how the video prompt is interpreted by the model, by decoding the latent states that correspond to the prompt.
-            </p>
-            <br>
+            Multimodal foundation world models allow grounding visual prompts into the embodied domain. <br>
+            The world model allows to visualize how the video prompt is interpreted by the model, by decoding the latent states that correspond to the prompt. <br>
+            For the first six tasks we also indicate the corresponding tasks as we use them in the paper to show GenRL's ability to learn behaviors from video prompts. <br> <br>
             <div class="columns is-mobile is-centered is-multiline is-variable">
-                <div class="column is-half-mobile">
-                    <img  src="./assets/gifs/video_prompts/stickman/vid_doing_splits.gif" alt="">
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <div>quadruped walk</div>
+                    <img  src="./assets/gifs/video_prompts/quadruped/vid_spider_draw.gif" alt="">
                 </div>                    
-                <div class="column is-half-mobile">
-                    <img  src="./assets/gifs/video_prompts/stickman/vid_backflip.gif" alt="">
-                </div>
-                <div class="column is-half-mobile">
-                    <img  src="./assets/gifs/video_prompts/stickman/vid_flex.gif" alt="">
-                </div>
-                <div class="column is-half-mobile">
-                    <img  src="./assets/gifs/video_prompts/stickman/vid_headstand.gif" alt="">
-                </div>
-            </div>
-            <div class="columns is-mobile is-centered is-multiline is-variable">
-                <div class="column is-half-mobile">
-                    <img  src="./assets/gifs/video_prompts/quadruped/vid_dead_spider_white.gif" alt="">
-                </div>
-                <div class="column is-half-mobile">
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <div>cheetah run</div>
                     <img  src="./assets/gifs/video_prompts/cheetah/vid_dog_running_seen_from_the_side.gif" alt="">
                 </div>
-              
-                <div class="column is-half-mobile">
-                    <img  src="./assets/gifs/video_prompts/quadruped/vid_a_spider_walking_on_the_floor.gif" alt="">
-                </div>
-                <div class="column is-half-mobile">
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <div>cheetah standing</div>
                     <img  src="./assets/gifs/video_prompts/cheetah/vid_person_standing_up_with_hands_up_seen_from_the_side_1.gif" alt="">
-                </div>      
+                </div>
             </div>
             <div class="columns is-mobile is-centered is-multiline is-variable">
-                <div class="column is-half-mobile">
-                    <img  src="./assets/gifs/video_prompts/stickman/vid_lying_down_with_legs_up.gif" alt="">
-                </div>                    
-                <div class="column is-half-mobile">
-                    <img  src="./assets/gifs/video_prompts/stickman/vid_punching.gif" alt="">
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <div>stickman high kick</div>
+                    <img  src="./assets/gifs/video_prompts/stickman/vid_karate_kick.gif" alt="">
                 </div>
-                <div class="column is-half-mobile">
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <div>stickman walk</div>
+                    <img  src="./assets/gifs/video_prompts/stickman/vid_guy_walking_faster_skipframes.gif" alt="">
+                </div>     
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <div>kitchen microwave</div>
+                    <img  src="./assets/gifs/video_prompts/kitchen/vid_open_microwave.gif" alt="">
+                </div>
+            </div>
+            <div class="columns is-mobile is-centered is-multiline is-variable">  
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <img  src="./assets/gifs/video_prompts/stickman/vid_backflip.gif" alt="">
+                </div>
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <img  src="./assets/gifs/video_prompts/stickman/vid_flex.gif" alt="">
+                </div>
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <img  src="./assets/gifs/video_prompts/quadruped/vid_dead_spider_white.gif" alt="">
+                </div>
+            </div>
+            <div class="columns is-mobile is-centered is-multiline is-variable">
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <img  src="./assets/gifs/video_prompts/quadruped/vid_a_spider_walking_on_the_floor.gif" alt="">
+                </div>
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <img  src="./assets/gifs/video_prompts/cheetah/vid_person_standing_up_with_hands_up_seen_from_the_side_1.gif" alt="">
+                </div>      
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
                     <img  src="./assets/gifs/video_prompts/stickman/vid_dancing.gif" alt="">
                 </div>
-                <div class="column is-half-mobile">
-                    <img  src="./assets/gifs/video_prompts/stickman/vid_karate_kick.gif" alt="">
+            </div>
+            <div class="columns is-mobile is-centered is-multiline is-variable">
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <img  src="./assets/gifs/video_prompts/stickman/vid_lying_down_with_legs_up.gif" alt="">
+                </div>                    
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <img  src="./assets/gifs/video_prompts/stickman/vid_punching.gif" alt="">
+                </div>
+                <div class="column is-one-quarter is-half-mobile has-text-centered">
+                    <img  src="./assets/gifs/video_prompts/stickman/vid_headstand.gif" alt="">
                 </div>
             </div>
         </div>
