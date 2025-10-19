@@ -1,3 +1,13 @@
+- title: "Hybrid Training for Vision-Language-Action Models"
+  authors: "<strong>Pietro Mazzaglia</strong>, Cansu Sancaktar, Markus Peschl, Daniel Dijkman"
+  venue: "Preprint"
+  year: 2025
+  topics: [multimodal-agents, robotics]
+  thumbnail: assets/images/papers/hyt.jpg
+  links:
+    paper: "https://arxiv.org/abs/2510.00600"
+  venue_type: preprint
+
 - title: "Focusing on What Matters: Object-Agent-centric Tokenization for Vision Language Action Models"
   authors: "Rokas Bendikas*, Daniel Dijkman*, Markus Peschl, Sanjay Haresh, <strong>Pietro Mazzaglia</strong>"
   venue: "CoRL 2025"
@@ -107,7 +117,7 @@
   authors: "<strong>Pietro Mazzaglia</strong>, Tim Verbelen, Bart Dhoedt"
   venue: "NeurIPS 2021"
   year: 2021
-  topics: [active-inference]
+  topics: [active-inference, world-models]
   thumbnail: assets/images/papers/contrastive-ai.png
   links:
     paper: "https://arxiv.org/abs/2110.10083"

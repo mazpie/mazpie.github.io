@@ -95,6 +95,8 @@ layout: default
                         <span class="venue-badge venue-journal">{{ pub.venue }}</span>
                         {% elsif pub.venue_type == 'workshop' %}
                         <span class="venue-badge venue-workshop">{{ pub.venue }}</span>
+                        {% elsif pub.venue_type == 'preprint' %}
+                        <span class="venue-badge venue-workshop">{{ pub.venue }}</span>
                         {% endif %}
                         
                         {% if pub.award %}
