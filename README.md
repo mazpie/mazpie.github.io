@@ -1,7 +1,33 @@
-# Personal website
+# Pietro Mazzaglia's Academic Website
 
-Pietro Mazzaglia's personal website.
+Built with Jekyll for easy maintenance and GitHub Pages hosting.
 
-##### Website template
+## Local Development
 
-You are free to borrow the source code, but please link back to the website in your footer (and remember to remove the analytics code included in the header of the website).
+1. Install Ruby and Bundler
+2. Run `bundle install`
+3. Run `bundle exec jekyll serve`
+4. Visit `http://localhost:4000`
+
+## Adding a New Publication
+
+Edit `_data/publications.yml` and add a new entry:
+
+```yaml
+- title: "Your Paper Title"
+  authors: "Author List"
+  venue: "Conference/Journal Name"
+  year: 2025
+  topics: [topic1, topic2]
+  thumbnail: assets/images/papers/your-paper.jpg
+  award: "Best Paper" # optional
+  workshops: ["Workshop Name"] # optional
+  links:
+    paper: "URL"
+    code: "URL"
+  venue_type: conference # or journal, workshop
+```
+
+## Deployment
+
+Push to GitHub and enable GitHub Pages in repository settings.

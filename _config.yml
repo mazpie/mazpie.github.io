@@ -1,0 +1,31 @@
+title: Pietro Mazzaglia
+description: Hi, I am Pietro Mazzaglia and I am a Senior AI Researcher at Qualcomm AI Research, Amsterdam. <br />
+  The long-term goal of my research is to build embodied AI agents that discover and learn how to
+  behave in the environment from interactions data.
+url: https://mazpie.github.io
+author:
+  name: Pietro Mazzaglia
+  email_user: pmazzagl
+  email_domain: qti.qualcomm.com
+  github: mazpie
+  scholar: c-PYVTgAAAAJ
+  twitter: mazpie
+  linkedin: pietromazzaglia
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  publications:
+    output: false
+
+# Exclude files
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

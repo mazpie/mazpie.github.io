@@ -1,0 +1,128 @@
+- title: "Focusing on What Matters: Object-Agent-centric Tokenization for Vision Language Action Models"
+  authors: "Rokas Bendikas*, Daniel Dijkman*, Markus Peschl, Sanjay Haresh, <strong>Pietro Mazzaglia</strong>"
+  venue: "CoRL 2025"
+  year: 2025
+  topics: [multimodal-agents, robotics]
+  thumbnail: assets/images/papers/oat-vla.jpg
+  links:
+    paper: "https://arxiv.org/abs/2509.23655"
+  venue_type: conference
+
+- title: "GenRL: Multimodal-foundation world models for generalization in embodied agents"
+  authors: "<strong>Pietro Mazzaglia</strong>, Tim Verbelen, Bart Dhoedt, Aaron Courville, Sai Rajeswar"
+  venue: "NeurIPS 2024"
+  year: 2024
+  topics: [multimodal-agents, world-models]
+  thumbnail: assets/images/papers/genrl.png
+  workshops: ["MFM-EAI @ ICML 2024"]
+  award: "Outstanding Paper @ ICML workshop 2023"
+  links:
+    paper: "https://arxiv.org/abs/2406.18043"
+    code: "https://github.com/mazpie/genrl"
+    project: "https://mazpie.github.io/genrl"
+  venue_type: conference
+
+- title: "FOCUS: Object-Centric World Models for Robotics Manipulation"
+  authors: "Stefano Ferraro*, <strong>Pietro Mazzaglia*</strong>, Tim Verbelen, Bart Dhoedt"
+  venue: "Frontiers in Neurorobotics 2025"
+  year: 2023
+  topics: [world-models, robotics]
+  thumbnail: assets/images/papers/focus.png
+  award: "Best Paper @ RSS workshop 2023"
+  workshops: ["Robot Representations @ RSS 2023", "GMPL @ RSS 2023"]
+  links:
+    paper: "https://arxiv.org/abs/2307.02427"
+    code: "https://github.com/StefanoFerraro/FOCUS"
+    project: "https://focus-manipulation.github.io/"
+  venue_type: journal
+
+- title: "Choreographer: Learning and Adapting Skills in Imagination"
+  authors: "<strong>Pietro Mazzaglia</strong>, Tim Verbelen, Bart Dhoedt, Alexandre Lacoste, Sai Rajeswar"
+  venue: "ICLR 2023"
+  year: 2023
+  topics: [world-models, skill-learning]
+  thumbnail: assets/images/papers/choreographer.png
+  award: "Spotlight (top 25%)"
+  workshops: ["Offline RL @ ICML 2022 (oral)"]
+  links:
+    paper: "https://arxiv.org/abs/2211.13350"
+    code: "https://github.com/mazpie/choreographer"
+    project: "https://skillchoreographer.github.io/"
+  venue_type: conference
+
+- title: "Information-driven Affordance Discovery for Efficient Robotic Manipulation"
+  authors: "<strong>Pietro Mazzaglia</strong>, Taco Cohen, Daniel Dijkman"
+  venue: "ICRA 2024"
+  year: 2024
+  topics: [robotics, affordances, exploration]
+  thumbnail: assets/images/papers/affordances.png
+  workshops: ["GMPL @ RSS 2023"]
+  links:
+    paper: "https://arxiv.org/abs/2405.03865"
+    project: "https://mazpie.github.io/ida"
+  venue_type: conference
+
+- title: "Redundancy-aware Action Spaces for Robot Learning"
+  authors: "<strong>Pietro Mazzaglia*</strong>, Nicholas Backshall*, Xiao Ma, Stephen James"
+  venue: "RA-L 2024"
+  year: 2024
+  topics: [robotics]
+  thumbnail: assets/images/papers/action-spaces.png
+  links:
+    paper: "https://arxiv.org/abs/2406.04144"
+    code: "https://github.com/mazpie/redundancy-action-spaces"
+    project: "https://redundancy-actions.github.io/"
+  venue_type: journal
+
+- title: "Mastering the Unsupervised Reinforcement Learning Benchmark from Pixels"
+  authors: "Sai Rajeswar*, <strong>Pietro Mazzaglia*</strong>, Tim Verbelen, Alexandre Piché, Bart Dhoedt, Aaron Courville, Alexandre Lacoste"
+  venue: "ICML 2023"
+  year: 2023
+  topics: [world-models, exploration, unsupervised-rl]
+  thumbnail: assets/images/papers/urlb.png
+  award: "Oral"
+  workshops: ["DARL @ ICML 2022"]
+  links:
+    paper: "https://openreview.net/forum?id=8ZuNl-FXGbB"
+    code: "https://github.com/mazpie/mastering-urlb"
+    project: "https://masteringurlb.github.io/"
+  venue_type: conference
+
+- title: "Curiosity-Driven Exploration via Latent Bayesian Surprise"
+  authors: "<strong>Pietro Mazzaglia</strong>, Ozan Çatal, Tim Verbelen, Bart Dhoedt"
+  venue: "AAAI 2022"
+  year: 2022
+  topics: [exploration, active-inference]
+  thumbnail: assets/images/papers/lbs.jpg
+  award: "Oral"
+  workshops: ["SSL-RL @ ICLR 2021"]
+  links:
+    paper: "https://arxiv.org/abs/2104.07495"
+    code: "https://github.com/mazpie/mastering-urlb"
+    project: "https://lbsexploration.github.io/"
+    blog: "https://thesmartrobot.github.io/2022/02/23/lbs-exploration.html"
+  venue_type: conference
+
+- title: "Contrastive Active Inference"
+  authors: "<strong>Pietro Mazzaglia</strong>, Tim Verbelen, Bart Dhoedt"
+  venue: "NeurIPS 2021"
+  year: 2021
+  topics: [active-inference]
+  thumbnail: assets/images/papers/contrastive-ai.png
+  links:
+    paper: "https://arxiv.org/abs/2110.10083"
+    code: "https://github.com/mazpie/contrastive-aif"
+    project: "https://contrastive-aif.github.io/"
+    blog: "https://thesmartrobot.github.io/2021/11/18/contrastive-actinf.html"
+  venue_type: conference
+
+- title: "The Free Energy Principle for Perception and Action: A Deep Learning Perspective"
+  authors: "<strong>Pietro Mazzaglia</strong>, Tim Verbelen, Ozan Çatal, Bart Dhoedt"
+  venue: "Entropy 2022"
+  year: 2022
+  topics: [active-inference]
+  thumbnail: assets/images/papers/fep.png
+  award: "Best Paper Award"
+  links:
+    paper: "https://arxiv.org/abs/2207.06415"
+  venue_type: journal
