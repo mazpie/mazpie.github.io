@@ -72146,7 +72146,7 @@ module.exports = {
   "tutorial-2-desktop": "Usa il tasto sinistro, destro e la rotella del mouse per muoverti.",
   "tutorial-2-mobile": "Usa i gesti delle dita per muoverti.",
   "tutorial-3-heading": "Domina il robot",
-  "tutorial-3": "Controlla il robot cliccando e trascinando la pinza. Puoi controllare i singoli giunti tramite la GUI in alto a destra.",
+  "tutorial-3": "Controlla il robot cliccando e trascinando la pinza. Puoi controllare le singole articolazioni tramite la GUI in alto a destra.",
   "tutorial-4-heading": "Chi programma",
   "tutorial-4": "Combinando i pezzi del puzzle dalla toolbox puoi creare rapidamente un programma per il robot.",
   "tutorial-5-heading": "Mantieni la postura",
@@ -72172,8 +72172,8 @@ module.exports = {
   "gui-gripper-open": "Apri",
   "gui-gripper-close": "Chiudi",
   "gui-advanced-gripping": "Presa realistica",
-  "gui-joints": "Valori dei giunti",
-  "gui-ik-joints": "Giunti IK",
+  "gui-joints": "Valori delle articolazioni",
+  "gui-ik-joints": "Articolazioni IK",
   "gui-reset-robot": "Resetta robot",
   "gui-reset-view": "Resetta vista",
   "gui-close": "Chiudi",
@@ -72181,8 +72181,8 @@ module.exports = {
   "gui-confirm-switch-language": "Sei sicuro di voler cambiare lingua? Eventuali programmi non salvati andranno persi!",
   "gui-robot-info": "Info",
   "franka-info": "Il robot di Franka Emika ha 7 gradi di libertà e un'elevata sensibilità. Questo gli permette di muoversi in modo simile a un braccio umano e di reagire anche a tocchi leggeri. <p><a href=\"https://franka.de/\" target=\"_blank\">www.franka.de</a></p>",
-  "niryo-info": "Niryo crea robot con 6 giunti pensati per l'istruzione. Il robot è open source, quindi se hai i pezzi e una stampante 3D puoi anche costruirlo da solo! <p><a href=\"https://niryo.com/\" target=\"_blank\">www.niryo.com</a></p>",
-  "sawyer-info": "Sawyer è il successore del robot a due braccia Baxter ed è molto popolare nella ricerca. La disposizione dei giunti crea schemi di movimento molto particolari! <p><a href=\"https://www.rethinkrobotics.com/sawyer/\" target=\"_blank\">www.rethinkrobotics.com/sawyer/</a></p>"
+  "niryo-info": "Niryo crea robot con 6 articolazioni pensati per l'istruzione. Il robot è open source, quindi se hai i pezzi e una stampante 3D puoi anche costruirlo da solo! <p><a href=\"https://niryo.com/\" target=\"_blank\">www.niryo.com</a></p>",
+  "sawyer-info": "Sawyer è il successore del robot a due braccia Baxter ed è molto popolare nella ricerca. La disposizione delle articolazioni crea schemi di movimento molto particolari! <p><a href=\"https://www.rethinkrobotics.com/sawyer/\" target=\"_blank\">www.rethinkrobotics.com/sawyer/</a></p>"
 };
 },{}],"src/blockly_fixes.js":[function(require,module,exports) {
 "use strict";
@@ -73335,10 +73335,10 @@ const BlocklyCustomIT = {
   ROCKSI_CATEGORY_EXTRAS: "Extra",
   ROCKSI_CATEGORY_EXAMPLES: "Esempi",
   ROCKSI_BLOCK_MOVE: "Muovi %1",
-  ROCKSI_BLOCK_MOVE_TOOLTIP: "Collega a una posa di giunti o di spazio di lavoro per far muovere il robot lì",
+  ROCKSI_BLOCK_MOVE_TOOLTIP: "Collega a una posa di articolazioni o di spazio di lavoro per far muovere il robot lì",
   ROCKSI_BLOCK_DEFAULTPOSE: "Posa iniziale",
   ROCKSI_BLOCK_DEFAULTPOSE_TOOLTIP: "Posa iniziale del robot",
-  ROCKSI_BLOCK_JOINTSPACEPOSE_TOOLTIP: "Una posa nello spazio dei giunti, cioè un angolo per giunto a partire dalla base",
+  ROCKSI_BLOCK_JOINTSPACEPOSE_TOOLTIP: "Una posa nello spazio delle articolazioni, cioè un angolo per articolazione a partire dalla base",
   ROCKSI_BLOCK_TASKSPACEPOSE_TOOLTIP: "Una posa nello spazio di lavoro, cioè una posizione e un orientamento nello spazio",
   ROCKSI_BLOCK_JOINTABSOLUTE: "Angolo giunto (assoluto) %1 %2",
   ROCKSI_BLOCK_JOINTABSOLUTE_TOOLTIP: "Muovi un singolo giunto a un angolo impostato",
@@ -73377,7 +73377,7 @@ const BlocklyCustomIT = {
   ROCKSI_BLOCK_SCALE: "%1",
   ROCKSI_BLOCK_SCALE_TOOLTIP: "Un fattore",
   ROCKSI_EXAMPLE_PICK_N_PLACE: "Pick & Place: prendere e rilasciare un oggetto",
-  ROCKSI_EXAMPLE_PICK_N_PLACE_COMMENT_1: "Le pose nello spazio dei giunti saranno sempre più affidabili!"
+  ROCKSI_EXAMPLE_PICK_N_PLACE_COMMENT_1: "Le pose nello spazio delle articolazioni saranno sempre più affidabili!"
 };
 exports.BlocklyCustomIT = BlocklyCustomIT;
 },{}],"src/editor/constants/colors.js":[function(require,module,exports) {
@@ -74579,9 +74579,8 @@ Blockly.JavaScript["physics_done"] = function (block) {
 };
 
 Blockly.JavaScript["is_attached"] = function (block) {
-  let ret = '["is_attached", ' + (0, _createObjects.isAttached)() + ']';
-  console.log(ret);
-  return [ret, Blockly.JavaScript.ORDER_ATOMIC];
+  let code = 'isAttached()';
+  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 };
 /* ======
  * EXTRAS
@@ -81033,6 +81032,12 @@ function simulationAPI(interpreter, globalObject) {
   };
 
   interpreter.setProperty(globalObject, 'robot', interpreter.createNativeFunction(wrapper));
+
+  wrapper = function wrapper() {
+    return (0, _createObjects.isAttached)();
+  };
+
+  interpreter.setProperty(globalObject, 'isAttached', interpreter.createNativeFunction(wrapper));
 }
 
 var interpreter = null;
@@ -81446,7 +81451,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38403" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45167" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
